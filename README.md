@@ -30,6 +30,9 @@ No hay pasos adicionales que realizar en este caso.
 
 * [Visual Studio Code](https://code.visualstudio.com/download) - IDE
 * Apuntes de la materia - Consultar en el sitio web de la [universidad](https://www.uade.edu.ar/facultad-de-ingenieria-y-ciencias-exactas/licenciatura-en-gestion-de-tecnologia-de-la-informacion/)
+* [W3Schools Tutorial HTML](https://www.w3schools.com/html/)
+* [Mozilla Developer Network HTML Reference](https://developer.mozilla.org/es/docs/Web/HTML/Reference)
+* [HTML Cheat Sheet](https://cheatography.com/semagarcia/cheat-sheets/html5-standard-cheatsheet-espanol/)
 
 ## Autores ✒️
 
