@@ -34,11 +34,36 @@ No hay pasos adicionales que realizar en este caso.
 * [Mozilla Developer Network HTML Reference](https://developer.mozilla.org/es/docs/Web/HTML/Reference)
 * [HTML Cheat Sheet](https://cheatography.com/semagarcia/cheat-sheets/html5-standard-cheatsheet-espanol/)
 
-## Herramientas utiles 🛠️
-https://wave.webaim.org/
-https://webaim.org/resources/contrastchecker/
-https://fonts.google.com/
-https://validator.w3.org/
+## Herramientas/sitios utiles 🛠️
+https://wave.webaim.org
+https://webaim.org/resources/contrastchecker
+https://fonts.google.com
+https://validator.w3.org
+https://www.w3schools.com/html
+https://developer.mozilla.org/es/docs/Web/HTML/Reference
+https://cheatography.com/semagarcia/cheat-sheets/html5-standard-cheatsheet-espanol
+https://getbootstrap.esdocu.com/docs/5.1/layout/breakpoints/?authuser=0
+https://getbootstrap.esdocu.com/docs/5.1/layout/grid/?authuser=0
+https://getbootstrap.esdocu.com/docs/5.1/utilities/display/?authuser=0#ocultar-elementos
+https://getbootstrap.esdocu.com/docs/5.1/layout/grid/?authuser=0#columnas-de-fila
+https://www.jqueryscript.net
+https://www.unheap.com
+https://www.bestjquery.com
+https://miro.com/flowchart
+https://www.lucidchart.com/pages/examples/flowchart-maker
+https://wireframe.cc
+https://figma.com
+https://www.adobe.com/express/create/mood-board
+https://www.canva.com/create/mood-boards
+https://moodboardai.com
+https://styletil.es
+https://www.fontpair.co
+https://fontjoy.com
+https://coolors.co
+https://fonts.google.com
+https://unsplash.com/es
+https://www.iconfinder.com
+https://www.bluevertigo.com.ar
 
 
 ## Autores ✒️
