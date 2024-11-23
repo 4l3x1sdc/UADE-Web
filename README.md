@@ -14,6 +14,8 @@ Si tenes acceso podes hacer un git clone de la URL del proyecto en una consola p
 
 Necesitas al menos tener un browser instalado en tu maquina, y sensillamente abris los archivos html.
 
+Podes ver los ejercicios en linea desde este link: https://4l3x1sdc.github.io/UADE-Web
+
 ### Instalación 🔧
 
 No hay pasos adicionales que realizar en este caso.
