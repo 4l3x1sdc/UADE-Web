@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adivina el Número</title>
+  <script>
+    
+    var numeroAdivinar = Math.floor(Math.random() * 11);
+    var intentos = 0; 
+
+    
+    function adivinarNumero() {
+      var numeroIngresado = parseInt(document.getElementById("numeroInput").value);
+      intentos++;
+
+      
+      if (isNaN(numeroIngresado) || numeroIngresado < 0 || numeroIngresado > 10) {
+        alert("Por favor, ingresa un número entre 0 y 10.");
+        return;
+      }
+
+      
+      if (numeroIngresado < numeroAdivinar) {
+        document.getElementById("resultado").innerText = "Tu número ingresado es menor que el número a adivinar.";
+      } else if (numeroIngresado > numeroAdivinar) {
+        document.getElementById("resultado").innerText = "Tu número ingresado es mayor que el número a adivinar.";
+      } else {
+        document.getElementById("resultado").innerText = "¡Felicidades! Adivinaste el número " + numeroAdivinar + " en " + intentos + " intentos.";
+        document.getElementById("numeroInput").disabled = true; 
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Adivina el Número</h1>
+  <p>Ingresa un número entre 0 y 10:</p>
+  <input type="number" id="numeroInput" min="0" max="10">
+  <button onclick="adivinarNumero()">Adivinar</button>
+  
+  <p id="resultado"></p>
+</body>
+</html>

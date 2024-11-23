@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <h1>¡Eleva tu juego y desafía tus límites!</h1>
+        </div>
+    </header>
+
+    <section id="intro">
+        <div class="container">
+            <h2>Descubre la emoción del baloncesto</h2>
+            <p>¡Sumérgete en la emoción del baloncesto y desata todo tu potencial deportivo! El basketball es mucho más que un simple deporte; es una experiencia que desafía tus habilidades físicas y mentales, y te impulsa a superar tus propios límites. Desde el sonido del balón al chocar contra el suelo hasta la euforia de encestar un triple, el baloncesto te envuelve en un torbellino de emociones. Además, es una excelente forma de mantenerte en forma y mejorar tu coordinación, resistencia y agilidad. ¡Descubre la pasión del baloncesto y déjate llevar por su ritmo trepidante!</p>
+        </div>
+    </section>
+
+    <section id="nudo">
+        <div class="container">
+            <h2>Desarrolla habilidades para toda la vida.</h2>
+            <p>Conviértete en un líder en la cancha y desarrolla habilidades para toda la vida. El baloncesto no solo te brinda la oportunidad de jugar un deporte apasionante, sino que también te enseña valores fundamentales como el trabajo en equipo, la disciplina y la perseverancia. Cada partido es una oportunidad para aprender a comunicarte, confiar en tus compañeros y tomar decisiones rápidas y efectivas bajo presión. Además, el baloncesto fomenta una mentalidad de superación constante, ya que siempre hay espacio para mejorar tus habilidades y estrategias. ¡Eleva tu juego y descubre tu verdadero potencial en la cancha!</p>
+        </div>
+    </section>
+
+    <section id="fin">
+        <div class="container">
+            <h2>Únete a la comunidad del baloncesto</h2>
+            <p>Vive momentos inolvidables junto a nuevos amigos! El baloncesto trasciende las barreras del idioma, la cultura y la edad, reuniendo a personas de diferentes trasfondos en torno a una pasión común. Tendrás la oportunidad de formar parte de equipos locales, participar en competiciones emocionantes y vivir la camaradería única que surge entre los jugadores. Ya sea que estés buscando una actividad divertida para mantener un estilo de vida saludable o sueñes con llegar a la élite del baloncesto, este deporte te ofrece una puerta abierta a nuevas experiencias y oportunidades. ¡No esperes más y adéntrate en el mundo del baloncesto! </p>
+        </div>
+    </section>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
+
+<script>
+    'use strict';
+
+    /* selecciona los siguientes elementos y almacénalos en una variable:
+    - header
+    - etiqueta h1
+    - #intro
+    - #nudo
+    - #fin
+    */
+
+    // header: agregarle un elemento div con la clase .overlay como último elemento hijo
+    // -- append()
+
+
+    // a la etiqueta h1 agregarle el atributo class cuyo valor sea .titular
+    // -- addClass()
+    
+    //intro: antes del párrafo, agregar un elemento con la clase .line
+    // -- before()
+
+    // nudo: agrega, luego del contenido, un objeto con la clase .overlay
+
+    // fin: agrega luego de él un objeto con la clase .divisor guardado en la siguiente variable
+    // -- after()    
+
+    // a este último elemento (.divisor) agregale un párrafo con tu nombre y apellido
+    // -- html()
+
+    var header = $('header');
+    var h1 = $('header h1');
+    var intro = $('#intro');
+    var nudo = $('#nudo');
+    var fin = $('#fin');
+
+    header.append('<div class="overlay"></div>');
+
+    h1.addClass('titular');
+
+    intro.find('p').before('<div class="line"></div>');
+
+    nudo.append('<div class="overlay"></div>');
+
+    fin.after('<div class="divisor"></div>');
+
+    $('.divisor').html('<p>Alexis Concepcion</p>');
+
+
+
+
+
+</script>
+
+</body>
+</html>

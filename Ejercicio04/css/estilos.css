@@ -1,0 +1,85 @@
+.sec_1 {
+    background-color: #6deff8;
+    padding: 15px;
+    margin: 20px;
+}
+
+.sec_2 {
+    background-image: url('../img/paisaje-montana-lago.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #f2f6f8;
+}
+
+.sec_3 {
+    border-radius: 2px;
+    border-color: red;
+    border-radius: 10px;
+}
+
+.sec_4 {
+    padding: 5px;
+}
+
+.sec_4 p {
+    font-weight: 700;
+    border: 2px solid;
+    padding: 20px;
+    margin: 10px;
+}
+
+.sec_5 div {
+    background-color: yellow;
+    text-align: center;
+}
+
+.sec_6 {
+    border: 5px double #680168;
+    background-color: rgb(234, 190, 63);
+    padding: 40px;
+}
+
+.sec_7 {
+    background-image: url('../img/paisaje-montana-lago.jpg');
+    background-repeat: no-repeat;
+}
+
+.sec_8 {
+    background-image: url('../img/paisaje-montana-lago.jpg');
+    background-size: 50%;
+    background-repeat: repeat-y;
+}
+
+.sec_9 {
+    background-color: #fa59b1a3;
+    background-image: url('../img/paisaje-montana-lago.jpg');
+    background-size: 15%;
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+}
+
+.sec_9 a {
+    background-color: rgb(2, 27, 250);
+    color: rgb(231, 225, 225);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.sec_10 {
+    width: 50%;
+    border: 3px dotted rgb(4, 199, 4);
+    padding: 25px;
+}
+    
+  
+    10 Haz que esta sección ocupe solamente el 50% de ancho de la pantalla.
+    Aplica un borde punteado de 3px alrededor de la sección con un color verde. Luego, agrega un margen 
+    interior (padding) de 25px en todos los lados de la sección.
+
+    
+    .section10 {
+        width: 50%;
+        
+        border: 3px dotted green;
+        padding: 25px;
+    }

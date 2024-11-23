@@ -1,0 +1,38 @@
+h1{
+    color: rgb(4, 144, 231);
+    font-family: sans-serif;
+}
+
+h2{
+    color: rgb(4, 144, 231);
+    font-family: sans-serif;
+}
+
+h3 {
+    color: rgb(255, 153, 0);
+    font-family: sans-serif;
+}
+
+header .parrafoinicial{
+    color: rgb(255, 0, 13);
+    font-family: sans-serif;
+}
+main .parrafo1{
+    color: rgb(87, 201, 53);
+    font-family: sans-serif;
+}
+
+main .parrafo2{
+    color: rgb(197, 115, 20);
+    font-family: sans-serif;
+}
+
+main .parrafo3{
+    color: rgb(210, 127, 231);
+    font-family: sans-serif;
+}
+
+main .parrafo4{
+    color: rgb(211, 44, 233);
+    font-family: sans-serif;
+}

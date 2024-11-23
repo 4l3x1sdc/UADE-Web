@@ -1,0 +1,59 @@
+/* Diseño líquido centrado con un ancho del 80% */
+body {
+    width: 80%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+/* Encabezado de nivel 1 centrado */
+h1 {
+    text-align: center;
+}
+
+/* Flotado para organizar las dos columnas */
+.seccion {
+    position: relative;
+    bottom: 643px;
+}
+
+.databook {
+    width: calc(100% - 75%);
+    float: left;
+}
+
+.sumary {
+    width: 70%;
+    float: left;
+    margin-left: 30%;
+}
+
+/* Caja de personajes con dos columnas */
+.pers {
+    border: 1px solid black;
+    padding: 20px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.pers-col {
+    width: 45%;
+    float: left;
+}
+
+.sec {
+    margin-left: 10%;
+}
+
+/* Ajustes generales */
+h2, h3 {
+    margin-top: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.pers {
+width: calc(100% - 33%);
+margin-left: 400px;
+}

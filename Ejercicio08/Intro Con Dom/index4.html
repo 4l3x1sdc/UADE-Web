@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mayor y Menor de Números</title>
+  <script>
+    
+    function obtenerMayorMenor() {
+      var numeros = [];
+      
+      
+      for (var i = 0; i < 5; i++) {
+        var numero = parseFloat(prompt("Ingresa el número " + (i + 1) + ":"));
+        numeros.push(numero);
+      }
+
+      
+      var mayor = Math.max(...numeros);
+      var menor = Math.min(...numeros);
+
+      
+      var resultadoHTML = "<ul>";
+      resultadoHTML += "<li>El mayor número ingresado es: " + mayor + "</li>";
+      resultadoHTML += "<li>El menor número ingresado es: " + menor + "</li>";
+      resultadoHTML += "<li>Números ingresados:</li><ul>";
+      numeros.forEach(function(numero) {
+        resultadoHTML += "<li>" + numero + "</li>";
+      });
+      resultadoHTML += "</ul></ul>";
+
+      
+      document.getElementById("resultado").innerHTML = resultadoHTML;
+    }
+  </script>
+</head>
+<body>
+  <h1>Calculadora de Números</h1>
+  <button onclick="obtenerMayorMenor()">Ingresar Números</button>
+  
+  <div id="resultado"></div>
+</body>
+</html>

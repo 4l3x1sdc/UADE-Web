@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Números Mayores y Menores</title>
+  <script>
+    
+    var numeros = [];
+    var mayor;
+    var menor;
+
+    
+    for (var i = 0; i < 5; i++) {
+      var numero = parseFloat(prompt("Ingresa el número " + (i + 1) + ":"));
+      numeros.push(numero);
+
+      
+      if (i === 0) {
+        mayor = numero;
+        menor = numero;
+      } else {
+        if (numero > mayor) {
+          mayor = numero;
+        }
+        if (numero < menor) {
+          menor = numero;
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <script>
+    
+    var mensaje = "El mayor número ingresado es: " + mayor + "\n" +
+                  "El menor número ingresado es: " + menor + "\n" +
+                  "Lista de números ingresados:\n" +
+                  "- " + numeros.join("\n- ");
+
+    
+    alert(mensaje);
+  </script>
+</body>
+</html>

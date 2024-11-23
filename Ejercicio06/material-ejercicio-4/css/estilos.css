@@ -1,0 +1,126 @@
+@media (min-width: 960px) { 
+    body {
+        background-color: #e64e4e;   /* Cambia el color de fondo en pantallas mayores a 960px */
+        }
+    }
+
+@media (max-width: 600px) {
+    p {
+        font-size: 20px; /* Cambia el tamanio de fuente de parrafo para pantallas  menores a 600px */
+        }
+    }
+
+@media (orientation: portrait) {
+    .sidebar {
+        display: none; /* quita el sidebar en orientacion vertical (aca no tendo sidebar pero si lo tuviera) */
+        }
+    }
+
+@media (orientation: landscape) {
+    .navbar {
+        display: block; /* bloqueo la barra de navegacion en orientacion horizontal (aca no tendo barra de navegacion pero si la tuviera) */
+        }
+    }
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Cambia texto a una columna para pantallas menores a 768px (no hay columnas)*/
+        align-items: center;
+        }
+    }
+
+@media (min-width: 1200px) {
+    .item {
+        margin: 30px; /* ajusta el margen del item para pantallas mayores a 1200px */
+        }
+    }
+
+@media (max-width: 576px) {
+    h1 {
+        font-family: 'Verdana', sans-serif; /* Cambiar la fuente para pantallas menores a 576px */
+        }
+    }
+
+@media (max-width: 480px) {
+    img {
+        width: 75%;  /* Reduce el tamaño al 75% del ancho de la pantalla cuando la pantalal es menor a 480px*/
+        }
+    }
+
+.sec_1 {
+    background-color: #6deff8;
+    padding: 15px;
+    margin: 20px;
+}
+
+.sec_2 {
+    background-image: url('../img/paisaje-montana-lago.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #f2f6f8;
+}
+
+.bordeado {
+    border-color: blue red green;
+  }
+
+.sec_3 {
+    border-radius: 2px;
+    border-color: blue red green;
+    border-radius: 10px;
+}
+
+.sec_4 {
+    padding: 5px;
+}
+
+.sec_4 p {
+    font-weight: 700;
+    border: 2px solid;
+    padding: 20px;
+    margin: 10px;
+}
+
+.sec_5 div {
+    background-color: yellow;
+    text-align: center;
+}
+
+.sec_6 {
+    border: 5px double #680168;
+    background-color: rgb(234, 190, 63);
+    padding: 40px;
+}
+
+.sec_7 {
+    background-image: url('../img/paisaje-montana-lago.jpg');
+    background-repeat: no-repeat;
+}
+
+.sec_8 {
+    background-image: url('../img/paisaje-montana-lago.jpg');
+    background-size: 50%;
+    background-repeat: repeat-y;
+}
+
+.sec_9 {
+    background-color: #fa59b1a3;
+    background-image: url('../img/paisaje-montana-lago.jpg');
+    background-size: 15%;
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+}
+
+.sec_9 a {
+    background-color: rgb(2, 27, 250);
+    color: rgb(231, 225, 225);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.sec_10 {
+    width: 50%;
+    border: 3px dotted rgb(4, 199, 4);
+    padding: 25px;
+}
+    

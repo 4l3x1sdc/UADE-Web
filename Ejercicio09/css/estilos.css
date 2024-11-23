@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header,
+section {
+    min-height: 100vh;
+    display: flex;
+    position: relative;
+}
+
+header h1 {
+    margin: auto;
+    text-align: center;
+}
+
+.titular {
+    font-size: 10vmin;
+    font-weight: 900;
+}
+
+.overlay {
+    position: absolute;
+    inset: 40px;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.container {
+    max-width: 1280px;
+    padding: 4rem;
+    margin: auto;
+    position: relative;
+    z-index: 10;
+    color: whitesmoke;
+}
+
+h2 {
+    font-size: 6vmin;
+}
+
+p {
+    font-size: 2rem;
+}
+
+.line {
+    height: 1.5rem;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.divisor {
+    padding: 2rem;
+    background-color: black;
+    color: gray;
+    text-align: center;
+}
+
+header {
+    background: url(../img/fondo-1.jpg) no-repeat fixed;
+    background-size: cover;
+}
+
+#intro {
+    background: url(../img/fondo-2.jpg) no-repeat fixed;
+    background-size: cover;
+}
+
+#nudo {
+    background: url(../img/fondo-3.jpg) no-repeat fixed;
+    background-size: cover;
+}
+
+#fin {
+    background: url(../img/fondo-4.jpg) no-repeat fixed;
+    background-size: cover;
+}

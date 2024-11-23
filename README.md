@@ -12,7 +12,7 @@ Si tenes acceso podes hacer un git clone de la URL del proyecto en una consola p
 
 ### Pre-requisitos 📋
 
-Necesitas al menos tener un browser instalado en tu maquina, y sensillamente abris los archivos html en el.ercicio1.py"  ´´´
+Necesitas al menos tener un browser instalado en tu maquina, y sensillamente abris los archivos html.
 
 ### Instalación 🔧
 
@@ -33,6 +33,13 @@ No hay pasos adicionales que realizar en este caso.
 * [W3Schools Tutorial HTML](https://www.w3schools.com/html/)
 * [Mozilla Developer Network HTML Reference](https://developer.mozilla.org/es/docs/Web/HTML/Reference)
 * [HTML Cheat Sheet](https://cheatography.com/semagarcia/cheat-sheets/html5-standard-cheatsheet-espanol/)
+
+## Herramientas utiles 🛠️
+https://wave.webaim.org/
+https://webaim.org/resources/contrastchecker/
+https://fonts.google.com/
+https://validator.w3.org/
+
 
 ## Autores ✒️
 

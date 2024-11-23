@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tipo de Triángulo</title>
+  <script>
+    
+    function determinarTipoTriangulo() {
+      
+      var lado1 = parseFloat(prompt("Ingresa el valor del primer lado del triángulo:"));
+      var lado2 = parseFloat(prompt("Ingresa el valor del segundo lado del triángulo:"));
+      var lado3 = parseFloat(prompt("Ingresa el valor del tercer lado del triángulo:"));
+
+      
+      var tipoTriangulo;
+
+      
+      if (lado1 === lado2 && lado2 === lado3) {
+        tipoTriangulo = "equilátero";
+      } else if (lado1 === lado2 || lado1 === lado3 || lado2 === lado3) {
+        tipoTriangulo = "isósceles";
+      } else {
+        tipoTriangulo = "escaleno";
+      }
+
+      
+      document.getElementById("resultado").innerText = "El triángulo es " + tipoTriangulo + ".";
+    }
+  </script>
+</head>
+<body>
+  <h1>Calculadora de Triángulos</h1>
+  <button onclick="determinarTipoTriangulo()">Determinar Tipo de Triángulo</button>
+  
+  <p id="resultado"></p>
+</body>
+</html>

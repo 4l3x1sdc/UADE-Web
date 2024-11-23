@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Plugins</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <h1>¡Eleva tu juego y desafía tus límites!</h1>
+        </div>
+    </header>
+
+    <section id="intro">
+        <div class="container">
+            <h2>Descubre la emoción del baloncesto</h2>
+            <p>¡Sumérgete en la emoción del baloncesto y desata todo tu potencial deportivo! El basketball es mucho más que un simple deporte; es una experiencia que desafía tus habilidades físicas y mentales, y te impulsa a superar tus propios límites.</p>
+        </div>
+    </section>
+
+    <section id="carousel">
+       <div class="carousel-images">
+         <img src="img/fondo-1.jpg" alt="Imagen 1">
+         <img src="img/fondo-2.jpg" alt="Imagen 2">
+         <img src="img/fondo-3.jpg" alt="Imagen 3">
+       </div>
+    </section>
+
+    <section id="whatsapp">
+       <a href="https://wa.me/1234567890?text=¡Hola!%20Quiero%20saber%20más%20sobre%20el%20baloncesto" target="_blank" class="whatsapp-button">
+         Contáctanos en WhatsApp
+       </a>
+    </section>
+
+    <section id="parallax-section" data-parallax="scroll" data-image-src="img/fondo-3.jpg">
+       <div class="container">
+         <h2>Animación Parallax</h2>
+         <p>Disfruta del efecto de desplazamiento de fondo.</p>
+       </div>
+    </section>
+
+    <section id="gallery">
+       <a href="img/fondo-1.jpg" class="gallery-item"><img src="img/fondo-1.jpg" alt="Imagen 1"></a>
+       <a href="img/fondo-2.jpg" class="gallery-item"><img src="img/fondo-2.jpg" alt="Imagen 2"></a>
+       <a href="img/fondo-3.jpg" class="gallery-item"><img src="img/fondo-3.jpg" alt="Imagen 3"></a>
+       <a href="img/fondo-4.jpg" class="gallery-item"><img src="img/fondo-4.jpg" alt="Imagen 4"></a>
+    </section>
+
+    <section id="content-slider">
+      <div class="owl-carousel">
+          <div class="item">
+              <img src="img/fondo-1.jpg" alt="Imagen 1">
+              <h4>Contenido 1</h4>
+          </div>
+          <div class="item">
+              <img src="img/fondo-2.jpg" alt="Imagen 2">
+              <h4>Contenido 2</h4>
+          </div>
+          <div class="item">
+              <img src="img/fondo-3.jpg" alt="Imagen 3">
+              <h4>Contenido 3</h4>
+          </div>
+      </div>
+  </section>
+
+    <!-- jQuery y Plugins -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.5.0/parallax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+       $(document).ready(function(){
+         
+         // Carrusel de Imágenes - Slick Carousel
+         $('.carousel-images').slick({
+           dots: true,
+           infinite: true,
+           speed: 500,
+           slidesToShow: 1,
+           slidesToScroll: 1,
+           autoplay: true,
+           autoplaySpeed: 2000,
+         });
+
+         // Animación Parallax de Fondo
+         $('#parallax-section').parallax();
+
+         // Lightbox - Magnific Popup
+         $('.gallery-item').magnificPopup({
+           type: 'image',
+           gallery: {
+             enabled: true
+           }
+         });
+
+         // Slider de Contenido - Owl Carousel
+         $('.owl-carousel').owlCarousel({
+           loop: true,
+           margin: 10,
+           nav: true,
+           items: 1,
+           autoplay: true,
+           autoplayTimeout: 3000,
+         });
+
+       });
+    </script>
+</body>
+</html>
