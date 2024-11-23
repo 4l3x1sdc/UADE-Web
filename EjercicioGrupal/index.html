@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Vinos - Tintinelas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./js/Powerful-Customizable-jQuery-Carousel-Slider-OWL-Carousel/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="./js/Powerful-Customizable-jQuery-Carousel-Slider-OWL-Carousel/owl-carousel/owl.theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        footer h5 {
+            border-bottom: 2px solid #ce3b3b;
+            padding-bottom: 8px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    
+   <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="./index.html">Tienda de Vinos - Tintinelas</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="./paginas/nosotros.html">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="#products">Productos</a></li>
+                <li class="nav-item"><a class="nav-link" href="./paginas/eventos.html">Eventos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#cart">Carrito</a></li>
+                <li class="nav-item"><a class="nav-link" href="./paginas/contacto.html">Contacto</a></li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!-- Banner / Slider -->
+    <section id="banner" class="container-fluid p-0">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/luke-hodde-Jy6wIGmbGk0-unsplash (1).jpg" class="d-block w-100" alt="Banner 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/david-kohler-gBdG886bLDY-unsplash.jpg" class="d-block w-100" alt="Banner 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/anna-kaminova-ckjuMXBLu7o-unsplash.jpg" class="d-block w-100" alt="Banner 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section id="cta" class="text-center p-5 bg-light">
+        <h2>Descubre nuestros mejores vinos</h2>
+        <p>Explora nuestra colección y lleva a casa el vino perfecto para cada ocasión</p>
+        <a href="#products" class="btn btn-primary">Ver catálogo</a>
+    </section>
+
+    <!-- Pastillas de Información -->
+    <section id="info" class="container my-5">
+        <div class="row text-center">
+            <div class="col-md-4">
+                <div class="card border-0">
+                    <img src="./img/ritual-con-vino-tinto.webp" class="card-img-top" alt="Vinos Tintos">
+                    <div class="card-body">
+                        <h5 class="card-title">Vinos Tintos</h5>
+                        <p class="card-text">Descubre la intensidad y complejidad de los mejores tintos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0">
+                    <img src="./img/vino-blanco-beneficios-y-propiedades.png" class="card-img-top" alt="Vinos Blancos">
+                    <div class="card-body">
+                        <h5 class="card-title">Vinos Blancos</h5>
+                        <p class="card-text">Frescura y elegancia en cada sorbo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0">
+                    <img src="./img/Demuerte-Rosado-scaled.jpg" class="card-img-top" alt="Vinos Rosados">
+                    <div class="card-body">
+                        <h5 class="card-title">Vinos Rosados</h5>
+                        <p class="card-text">Para momentos especiales con un toque sutil.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <h2 class="text-center mb-4">Nuestros Mejores Productos</h2>
+    <div class="owl-carousel owl-theme">
+        <div><img width="300px" height="300px" src="./img/ritual-con-vino-tinto.webp" alt="Vinos Tintos"></div>
+        <div><img width="300px" height="300px" src="./img/vino-blanco-beneficios-y-propiedades.png" alt="Vinos Blancos"></div>
+        <div><img width="300px" height="300px" src="./img/Demuerte-Rosado-scaled.jpg" alt="Vinos Rosados"></div>
+        <div><img width="300px" height="300px" src="./img/edicion-limitada-1024x681.jpg" alt="Vinos Tintos"></div>
+        <div><img width="300px" height="300px" src="./img/red-wine-grapes-min-e1710961366549.jpg" alt="Vinos Blancos"></div>
+        <div><img width="300px" height="300px" src="./img/7-caracteristicas-del-vino-tinto-merlot-wine-com-mx.webp" alt="Vinos Rosados"></div>
+        
+      </div>
+
+    <!-- Productos -->
+    <section id="products" class="container my-5">
+        <h2 class="text-center mb-4">Nuestro Catálogo de Vinos</h2>
+        <div class="row" id="product-list"></div>
+    </section>
+
+
+     <!-- Carrito de Compras -->
+     <section id="cart" class="container my-5">
+        <h2 class="text-center mb-4">Carrito de Compras</h2>
+        <div id="cart-items" class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Total</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-table">
+                    <!-- Aquí se agregarán los productos del carrito -->
+                </tbody>
+            </table>
+            <div class="text-end">
+                <strong>Total del Carrito: $<span id="cart-total">0</span></strong>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Sponsors -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Nuestros Sponsors</h2>
+        <div class="row justify-content-center align-items-center sponsors-container owl-theme">
+            <div class="col-6 col-md-2 mb-4 sponsor-item">
+                <img src="./img/uade_una_gran_universidad.png" alt="Sponsor 1" class="img-fluid sponsor-logo">
+            </div>
+            <div class="col-6 col-md-2 mb-4 sponsor-item">
+                <img src="./img/mercadolibre.svg" alt="Sponsor 2" class="img-fluid sponsor-logo">
+            </div>
+            <div class="col-6 col-md-2 mb-4 sponsor-item">
+                <img src="./img/Globant_Logo.svg.png" alt="Sponsor 3" class="img-fluid sponsor-logo">
+            </div>
+            <div class="col-6 col-md-2 mb-4 sponsor-item">
+                <img src="./img/sb-trapiche-removebg-preview.png" alt="Sponsor 4" class="img-fluid sponsor-logo">
+            </div>
+            <div class="col-6 col-md-2 mb-4 sponsor-item">
+                <img src="./img/CATENA ZAPATA.png" alt="Sponsor 5" class="img-fluid sponsor-logo">
+            </div>
+            <div class="col-6 col-md-2 mb-4 sponsor-item">
+                <img src="./img/turismo-logo-zuccardi.png" alt="Sponsor 6" class="img-fluid sponsor-logo">
+            </div>
+            <div class="col-6 col-md-2 mb-4 sponsor-item">
+                <img src="./img/CH_LOGOS_global-15-01.png" alt="Sponsor 7" class="img-fluid sponsor-logo">
+            </div>
+            <div class="col-6 col-md-2 mb-4 sponsor-item">
+                <img src="./img/logo-salentein-blanco.svg" alt="Sponsor 8" class="img-fluid sponsor-logo">
+            </div>
+            <div class="col-6 col-md-2 mb-4 sponsor-item">
+                <img src="./img/logo_renacer__edited_edited.webp" alt="Sponsor 9" class="img-fluid sponsor-logo">
+            </div>
+            <div class="col-6 col-md-2 mb-4 sponsor-item">
+                <img src="./img/91997ad0d5d07e2679be5f559e7307855cb2a5a7225d39e8c815033918ff57c3.png" alt="Sponsor 10" class="img-fluid sponsor-logo">
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Sección de Testimonios -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Lo que dicen nuestros clientes</h2>
+        <div class="row testimonials-container" id="testimonials">
+            <!-- Los testimonios se cargarán dinámicamente -->
+        </div>
+    </section>
+
+
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light p-5">
+        <div class="container">
+            <div class="row">
+                <!-- Columna Logo y Redes -->
+                <div class="col-md-4">
+                    <img src="./img/logo.jpg" alt="Logo Tintinelas" class="img-fluid mb-3" style="max-width: 200px;">
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fas fa-map-marker-alt me-2"></i>
+                        <span>Lima 757, CABA, <br>Buenos Aires, Argentina</span>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://facebook.com" class="me-2"><img src="./img/facebook.png" alt="Facebook" style="width: 32px;"></a>
+                        <a href="https://instagram.com" class="me-2"><img src="./img/instagram.svg.png" alt="Instagram" style="width: 32px;"></a>
+                        <a href="https://x.com" class="me-2"><img src="./img/x.webp" alt="Twitter" style="width: 32px;"></a>
+                    </div>
+                </div>
+
+                <div class="col-md-8">
+                    <div class="row">
+                        <!-- Columna LinkedIn 1 -->
+                        <div class="col-md-4">
+                            <h5 class="mb-3">Equipo 13</h5>
+                            <ul class="list-unstyled linkedin-links">
+                                <li class="mb-2">
+                                    <a href="https://www.linkedin.com/in/stefania-berger-95ab092ba/" class="text-light text-decoration-none d-flex align-items-center" target="_blank">
+                                        <i class="fab fa-linkedin me-2"></i>
+                                        Berger Stefania
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="https://www.linkedin.com/in/alexisconcepcion/" class="text-light text-decoration-none d-flex align-items-center" target="_blank">
+                                        <i class="fab fa-linkedin me-2"></i>
+                                        Concepcion Alexis
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="https://www.linkedin.com/in/valentina-cuello-3ab078160/" class="text-light text-decoration-none d-flex align-items-center" target="_blank">
+                                        <i class="fab fa-linkedin me-2"></i>
+                                        Cuello Valentina
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="https://www.linkedin.com/in/leandro-melo-3028b0139/" class="text-light text-decoration-none d-flex align-items-center" target="_blank">
+                                        <i class="fab fa-linkedin me-2"></i>
+                                        Melo Leandro
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="https://www.linkedin.com/in/sofia-villar-b490b5207/" class="text-light text-decoration-none d-flex align-items-center" target="_blank">
+                                        <i class="fab fa-linkedin me-2"></i>
+                                        Villar Sofia
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        
+
+                        <!-- Columna Contacto -->
+                        <div class="col-md-4">
+                            <h5 class="mb-3">Dirección</h5>
+                            <ul class="list-unstyled contact-info">
+                                <li class="mb-3">
+                                    <i class="fas fa-map-marker-alt me-2"></i>
+                                    Lima 757, CABA
+                                </li>
+                                <li class="mb-3">
+                                    <i class="fas fa-phone me-2"></i>
+                                    +54 9 11-7662-5199
+                                </li>
+                                <li class="mb-3">
+                                    <i class="fas fa-envelope me-2"></i>
+                                    contactoUADE@tintinelas.com
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2024 Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- De aca para abajo todos los scripts -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/scripts.js"></script>
+
+
+    <!-- Owl Carousel -->
+    <script src="jquery-1.9.1.min.js"></script>
+    <script src="./js/Powerful-Customizable-jQuery-Carousel-Slider-OWL-Carousel/owl-carousel/owl.carousel.js"></script>
+    <script>$(document).ready(function() {
+ 
+ $(".owl-carousel").owlCarousel({
+ 
+ //Basic Speeds
+ slideSpeed : 200,
+ paginationSpeed : 800,
+
+ //Autoplay
+ autoPlay : true,
+ goToFirst : true,
+ goToFirstSpeed : 1000,
+
+ // Navigation
+ navigation : false,
+ navigationText : ["prev","next"],
+ pagination : true,
+ paginationNumbers: true,
+
+ // Responsive
+ responsive: true,
+ items : 5,
+ itemsDesktop : [1199,4],
+ itemsDesktopSmall : [980,3],
+ itemsTablet: [768,2],
+ itemsMobile : [479,1]
+
+})
+    });</script>
+
+
+<script>
+    // Datos de testimonios
+    const testimonials = [
+        {
+            name: "Juan Pérez",
+            image: "./img/ChrisEvans.webp",
+            comment: "Los vinos de Tintinelas son excepcionales. La calidad y el sabor son incomparables. Mi favorito es el Malbec Reserva, perfecto para ocasiones especiales."
+        },
+        {
+            name: "Carlos Rodríguez",
+            image: "./img/newFile-4.avif",
+            comment: "He probado muchos vinos, pero los de Tintinelas tienen algo especial. Su Chardonnay es simplemente delicioso, con un equilibrio perfecto."
+        },
+        {
+            name: "Cristian Gomez",
+            image: "./img/robert-downey-jr-star-wars.webp",
+            comment: "La relación calidad-precio es inmejorable. Además, el servicio al cliente es excelente. Sin duda, mi bodega favorita."
+        }
+    ];
+
+    // Función para cargar testimonios
+    function loadTestimonials() {
+        const container = document.getElementById('testimonials');
+        testimonials.forEach(testimonial => {
+            const testimonialHTML = `
+                <div class="col-md-4 mb-4">
+                    <div class="card testimonial-card text-center shadow">
+                        <div class="card-body">
+                            <div class="mb-4">
+                                <img src="${testimonial.image}" 
+                                     alt="${testimonial.name}" 
+                                     class="rounded-circle testimonial-image">
+                            </div>
+                            <h5 class="card-title">${testimonial.name}</h5>
+                            <p class="card-text text-muted">"${testimonial.comment}"</p>
+                        </div>
+                    </div>
+                </div>
+            `;
+            container.innerHTML += testimonialHTML;
+        });
+    }
+
+    // Cargar testimonios cuando el documento esté listo
+    document.addEventListener('DOMContentLoaded', loadTestimonials);
+</script>
+    
+</body>
+</html>

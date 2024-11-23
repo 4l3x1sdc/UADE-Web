@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Vinos - Tintinelas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+
+    <style>
+        .btn-primary {
+            background-color: #3b0a0a;
+            border-color: #3b0a0a;
+        }
+    
+        .btn-primary:hover {
+            background-color: #892929;
+            border-color: #892929;
+        }
+    </style>
+</head>
+<body>
+   <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="/index.html">Tienda de Vinos - Tintinelas</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="/index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="/paginas/nosotros.html">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="/index.html#products">Productos</a></li>
+                <li class="nav-item"><a class="nav-link" href="/paginas/eventos.html">Eventos</a></li>
+                <li class="nav-item"><a class="nav-link" href="/index.html#cart">Carrito</a></li>
+                <li class="nav-item"><a class="nav-link" href="/paginas/contacto.html">Contacto</a></li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Banner de Contacto -->
+<section class="container-fluid p-0">
+    <div class="banner-contacto position-relative">
+        <div style="position: relative;">
+            <img src="/img/elisha-terada-MDJvfXJGnRM-unsplash.jpg" class="w-100" alt="Banner de contacto" style="height: 300px; object-fit: cover;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(59, 10, 10, 0.617);"></div>
+        </div>
+        <div class="position-absolute top-50 start-50 translate-middle text-center">
+            <h2 class="text-white display-4 fw-bold" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Contacto</h2>
+        </div>
+    </div>
+</section>
+
+
+<!-- Sección de Contacto -->
+<section class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <h2 class="text-center mb-4">Escríbenos!</h2>
+            <h6 class="text-center text-secondary mb-4">Completa el formulario y nos pondremos en contacto contigo</h6>
+            <div class="card shadow">
+                <div class="card-body">
+                    <form id="formularioContacto" onsubmit="return validarFormulario(event)">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" required>
+                            <div class="invalid-feedback">
+                                Por favor ingrese su nombre
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="apellido" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="apellido" required>
+                            <div class="invalid-feedback">
+                                Por favor ingrese su apellido
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" id="email" required>
+                            <div class="invalid-feedback">
+                                Por favor ingrese un correo electrónico válido
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefono" class="form-label">Teléfono</label>
+                            <input type="tel" class="form-control" id="telefono" required>
+                            <div class="invalid-feedback">
+                                Por favor ingrese un número de teléfono válido
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="asunto" class="form-label">Asunto</label>
+                            <input type="text" class="form-control" id="asunto" required>
+                            <div class="invalid-feedback">
+                                Por favor ingrese el asunto
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje adicional</label>
+                            <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+                            <div class="invalid-feedback">
+                                Por favor ingrese su mensaje
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary px-5">Enviar mensaje</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <div class="card text-center p-4 mb-3">
+                <i style="color: #ce3b3b;" class="fas fa-phone fa-2x mb-3"></i>
+                <h5>Teléfono</h5>
+                <p class="text-muted">+54 9 11-7662-5199</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-center p-4 mb-3">
+                <i style="color: #ce3b3b;" style="color: #3b0a0a;" class="fas fa-envelope fa-2x mb-3"></i>
+                <h5>Email</h5>
+                <p class="text-muted">contactoUADE@tintinelas.com</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-center p-4 mb-3">
+                <i style="color: #ce3b3b;" style="color: #3b0a0a;" class="fas fa-map-marker-alt fa-2x mb-3"></i>
+                <h5>Dirección</h5>
+                <p class="text-muted">Lima 757, CABA</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+ <!-- Footer -->
+ <footer class="bg-dark text-light p-5">
+    <div class="container">
+        <div class="row">
+            <!-- Columna Logo y Redes -->
+            <div class="col-md-4">
+                <img src="/img/logo.jpg" alt="Logo Tintinelas" class="img-fluid mb-3" style="max-width: 200px;">
+                <div class="d-flex align-items-center mb-3">
+                    <i class="fas fa-map-marker-alt me-2"></i>
+                    <span>Lima 757, CABA, <br>Buenos Aires, Argentina</span>
+                </div>
+                <div class="social-icons">
+                    <a href="https://facebook.com" class="me-2"><img src="/img/facebook.png" alt="Facebook" style="width: 32px;"></a>
+                    <a href="https://instagram.com" class="me-2"><img src="/img/instagram.svg.png" alt="Instagram" style="width: 32px;"></a>
+                    <a href="https://x.com" class="me-2"><img src="/img/x.webp" alt="Twitter" style="width: 32px;"></a>
+                </div>
+            </div>
+
+            <div class="col-md-8">
+                <div class="row">
+                    <!-- Columna LinkedIn 1 -->
+                    <div class="col-md-4">
+                        <h5 class="mb-3">Equipo 13</h5>
+                        <ul class="list-unstyled linkedin-links">
+                            <li class="mb-2">
+                                <a href="https://www.linkedin.com/in/stefania-berger-95ab092ba/" class="text-light text-decoration-none d-flex align-items-center" target="_blank">
+                                    <i class="fab fa-linkedin me-2"></i>
+                                    Berger Stefania
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="https://www.linkedin.com/in/alexisconcepcion/" class="text-light text-decoration-none d-flex align-items-center" target="_blank">
+                                    <i class="fab fa-linkedin me-2"></i>
+                                    Concepcion Alexis
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="https://www.linkedin.com/in/valentina-cuello-3ab078160/" class="text-light text-decoration-none d-flex align-items-center" target="_blank">
+                                    <i class="fab fa-linkedin me-2"></i>
+                                    Cuello Valentina
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="https://www.linkedin.com/in/leandro-melo-3028b0139/" class="text-light text-decoration-none d-flex align-items-center" target="_blank">
+                                    <i class="fab fa-linkedin me-2"></i>
+                                    Melo Leandro
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="https://www.linkedin.com/in/sofia-villar-b490b5207/" class="text-light text-decoration-none d-flex align-items-center" target="_blank">
+                                    <i class="fab fa-linkedin me-2"></i>
+                                    Villar Sofia
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    
+
+                    <!-- Columna Contacto -->
+                    <div class="col-md-4">
+                        <h5 class="mb-3">Dirección</h5>
+                        <ul class="list-unstyled contact-info">
+                            <li class="mb-3">
+                                <i class="fas fa-map-marker-alt me-2"></i>
+                                Lima 757, CABA
+                            </li>
+                            <li class="mb-3">
+                                <i class="fas fa-phone me-2"></i>
+                                +54 9 11-7662-5199
+                            </li>
+                            <li class="mb-3">
+                                <i class="fas fa-envelope me-2"></i>
+                                contactoUADE@tintinelas.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-12 text-center">
+                <p class="mb-0">&copy; 2024 Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<!-- Scripts de Bootstrap y validación -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    function validarFormulario(event) {
+        event.preventDefault();
+        
+        const nombre = document.getElementById('nombre');
+        const email = document.getElementById('email');
+        const asunto = document.getElementById('asunto');
+        const mensaje = document.getElementById('mensaje');
+        
+        // Remover clases previas
+        const campos = [nombre, email, asunto, mensaje];
+        campos.forEach(campo => {
+            campo.classList.remove('is-invalid');
+            campo.classList.remove('is-valid');
+        });
+
+        // Validar campos
+        let esValido = true;
+        
+        if (!nombre.value.trim()) {
+            nombre.classList.add('is-invalid');
+            esValido = false;
+        } else {
+            nombre.classList.add('is-valid');
+        }
+
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email.value)) {
+            email.classList.add('is-invalid');
+            esValido = false;
+        } else {
+            email.classList.add('is-valid');
+        }
+
+        if (!asunto.value.trim()) {
+            asunto.classList.add('is-invalid');
+            esValido = false;
+        } else {
+            asunto.classList.add('is-valid');
+        }
+
+        if (!mensaje.value.trim()) {
+            mensaje.classList.add('is-invalid');
+            esValido = false;
+        } else {
+            mensaje.classList.add('is-valid');
+        }
+
+        if (esValido) {
+            // Mostrar mensaje de éxito
+            alert('¡Mensaje enviado con éxito!');
+            document.getElementById('formularioContacto').reset();
+            campos.forEach(campo => campo.classList.remove('is-valid'));
+        }
+
+        return false;
+    }
+</script>

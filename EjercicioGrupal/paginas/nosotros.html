@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Vinos - Tintinelas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/js/Powerful-Customizable-jQuery-Carousel-Slider-OWL-Carousel/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="/js/Powerful-Customizable-jQuery-Carousel-Slider-OWL-Carousel/owl-carousel/owl.theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+
+    <style>
+        .wine-image {
+            height: 300px;
+            object-fit: contain;
+            filter: drop-shadow(0 0 10px rgba(255,255,255,0.2));
+            transition: all 0.3s ease;
+        }
+    
+        .wine-card {
+            transition: all 0.3s ease;
+        }
+    
+        .wine-card:hover .wine-image {
+            filter: drop-shadow(0 0 20px rgba(255,255,255,0.4));
+            transform: translateY(-10px);
+        }
+    
+        .custom-btn {
+            background-color: #3b0a0a;
+            color: white;
+            border: none;
+            padding: 8px 24px;
+            transition: all 0.3s ease;
+        }
+    
+        .custom-btn:hover {
+            background-color: #892929;
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(137, 41, 41, 0.5);
+        }
+    
+        .product-carousel .owl-nav button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(59, 10, 10, 0.8) !important;
+            color: white !important;
+            padding: 0 10px !important;
+            border-radius: 50% !important;
+            width: 40px;
+            height: 40px;
+        }
+    
+        .product-carousel .owl-nav button.owl-prev {
+            left: -50px;
+        }
+    
+        .product-carousel .owl-nav button.owl-next {
+            right: -50px;
+        }
+
+        .carousel-item img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-card {
+            margin: 0 30px;
+        }
+
+        .btn-wine {
+            background-color: #3b0a0a;
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .btn-wine:hover {
+            background-color: #892929;
+            color: white;
+        }
+    </style>
+
+
+</head>
+<body>
+   <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="/index.html">Tienda de Vinos - Tintinelas</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="/index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="/paginas/nosotros.html">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="/index.html#products">Productos</a></li>
+                <li class="nav-item"><a class="nav-link" href="/paginas/eventos.html">Eventos</a></li>
+                <li class="nav-item"><a class="nav-link" href="/index.html#cart">Carrito</a></li>
+                <li class="nav-item"><a class="nav-link" href="/paginas/contacto.html">Contacto</a></li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</nav> 
+
+<!-- Banner de Nosotros -->
+<section class="container-fluid p-0">
+    <div class="banner-contacto position-relative">
+        <div style="position: relative;">
+            <img src="/img/maja-petric-vGQ49l9I4EE-unsplash.jpg" class="w-100" alt="Banner de nosotros" style="height: 300px; object-fit: cover;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(59, 10, 10, 0.617);"></div>
+        </div>
+        <div class="position-absolute top-50 start-50 translate-middle text-center">
+            <h2 class="text-white display-4 fw-bold" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Acerca de nosotros</h2>
+        </div>
+    </div>
+</section>
+
+<!-- Sección Historia y Valores -->
+<section class="container my-5">
+    <!-- Primera parte: Historia -->
+    <div class="row align-items-center mb-5">
+        <div class="col-md-6">
+            <img src="/img/david-kohler-gBdG886bLDY-unsplash.jpg" class="img-fluid rounded shadow" alt="Historia de nuestra bodega">
+        </div>
+        <div class="col-md-6">
+            <h3 class="mb-4" style="color: #3b0a0a;">Nuestra Historia</h3>
+            <p class="text-muted">
+                Fundada en 1945 por la familia Tintinelas, nuestra bodega comenzó como un pequeño emprendimiento familiar en el corazón de Mendoza. A lo largo de tres generaciones, hemos perfeccionado el arte de la vinificación, combinando técnicas tradicionales con innovación moderna.
+            </p>
+            <p class="text-muted">
+                Lo que comenzó como una modesta producción de vinos para el mercado local, se ha convertido en una empresa reconocida internacionalmente por la calidad y excelencia de nuestros productos, manteniendo siempre la esencia y los valores familiares que nos caracterizan.
+            </p>
+        </div>
+    </div>
+
+    <!-- Segunda parte: Misión, Visión y Valores -->
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <h4 class="mb-3 mt-4" style="color: #3b0a0a;">Misión</h4>
+            <p class="text-muted">
+                Crear vinos excepcionales que transmitan la pasión y dedicación de nuestra familia, respetando el medio ambiente y contribuyendo al desarrollo de nuestra comunidad.
+            </p>
+
+            <h4 class="mb-3 mt-4" style="color: #3b0a0a;">Visión</h4>
+            <p class="text-muted">
+                Ser reconocidos globalmente como una bodega líder en la producción de vinos de alta calidad, manteniendo nuestra esencia familiar y compromiso con la excelencia.
+            </p>
+
+            <h4 class="mb-3 mt-4" style="color: #3b0a0a;">Valores</h4>
+            <ul class="text-muted">
+                <li>Excelencia en cada botella</li>
+                <li>Respeto por la tradición y la tierra</li>
+                <li>Innovación constante</li>
+                <li>Compromiso con la sustentabilidad</li>
+                <li>Pasión por el vino</li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <img src="/img/luke-hodde-Jy6wIGmbGk0-unsplash (1).jpg" class="img-fluid rounded shadow" alt="Nuestras barricas">
+        </div>
+    </div>
+</section>
+
+<!-- Sección de Productos -->
+<section class="container-fluid py-5 bg-dark">
+    <div class="container text-center">
+        <h5 class="text-secondary">NUESTROS PRODUCTOS</h5>
+        <h2 class="mb-4 text-white">Colecciones de Vinos Destacados</h2>
+        
+        <div class="owl-carousel owl-theme">
+            <div class="card product-card shadow-sm">
+                <img src="/img/ritual-con-vino-tinto.webp" class="card-img-top" alt="Vinos Tintos">
+                <div class="card-body">
+                    <h5 class="card-title">Vino Tinto Reserva</h5>
+                    <p class="card-text">Un vino elegante con notas de frutos rojos y un final sedoso.</p>
+                    <button class="btn btn-wine" onclick="alert('Se realizo la compra con exito!')">Comprar</button>
+                </div>
+            </div>
+            <div class="card product-card shadow-sm">
+                <img src="/img/vino-blanco-beneficios-y-propiedades.png" class="card-img-top" alt="Vinos Blancos">
+                <div class="card-body">
+                    <h5 class="card-title">Vino Blanco Premium</h5>
+                    <p class="card-text">Fresco y aromático, perfecto para momentos especiales.</p>
+                    <button class="btn btn-wine" onclick="alert('Se realizo la compra con exito!')">Comprar</button>
+                </div>
+            </div>
+            <div class="card product-card shadow-sm">
+                <img src="/img/Demuerte-Rosado-scaled.jpg" class="card-img-top" alt="Vinos Rosados">
+                <div class="card-body">
+                    <h5 class="card-title">Vino Rosado Selección</h5>
+                    <p class="card-text">Delicado y frutal, ideal para cualquier ocasión.</p>
+                    <button class="btn btn-wine" onclick="alert('Se realizo la compra con exito!')">Comprar</button>
+                </div>
+            </div>
+            <div class="card product-card shadow-sm">
+                <img src="/img/propiedades-del-vino-blanco.png" class="card-img-top" alt="Vinos Tintos">
+                <div class="card-body">
+                    <h5 class="card-title">Vino Tinto Gran Reserva</h5>
+                    <p class="card-text">Intenso y complejo, con notas de especias y roble.</p>
+                    <button class="btn btn-wine" onclick="alert('Se realizo la compra con exito!')">Comprar</button>
+                </div>
+            </div>
+            <div class="card product-card shadow-sm">
+                <img src="/img/Untitleddesign2.png" class="card-img-top" alt="Vinos Blancos">
+                <div class="card-body">
+                    <h5 class="card-title">Vino Blanco Especial</h5>
+                    <p class="card-text">Equilibrado y mineral, con toques cítricos.</p>
+                    <button class="btn btn-wine" onclick="alert('Se realizo la compra con exito!')">Comprar</button>
+                </div>
+            </div>
+            <div class="card product-card shadow-sm">
+                <img src="/img/vino-rosa.jpg" class="card-img-top" alt="Vinos Rosados">
+                <div class="card-body">
+                    <h5 class="card-title">Vino Rosado Exclusivo</h5>
+                    <p class="card-text">Suave y elegante, con aromas florales.</p>
+                    <button class="btn btn-wine" onclick="alert('Se realizo la compra con exito!')">Comprar</button>
+                </div>
+            </div>
+            <div class="card product-card shadow-sm">
+                <img src="/img/beneficios-y-propiedades-del-vino-tinto.png" class="card-img-top" alt="Vinos Tintos">
+                <div class="card-body">
+                    <h5 class="card-title">Vino Tinto Crianza</h5>
+                    <p class="card-text">Robusto y aterciopelado, con notas de vainilla.</p>
+                    <button class="btn btn-wine" onclick="alert('Se realizo la compra con exito!')">Comprar</button>
+                </div>
+            </div>
+            <div class="card product-card shadow-sm">
+                <img src="/img/Copia-de-feliz-dia-del-padre-32.webp" class="card-img-top" alt="Vinos Blancos">
+                <div class="card-body">
+                    <h5 class="card-title">Vino Blanco Joven</h5>
+                    <p class="card-text">Vibrante y afrutado, con notas tropicales.</p>
+                    <button class="btn btn-wine" onclick="alert('Se realizo la compra con exito!')">Comprar</button>
+                </div>
+            </div>
+            <div class="card product-card shadow-sm">
+                <img src="/img/vino-rosado-espumoso-o-dulce-cual-es-mejor-wine-com-mx.webp" class="card-img-top" alt="Vinos Rosados">
+                <div class="card-body">
+                    <h5 class="card-title">Vino Rosado Premium</h5>
+                    <p class="card-text">Fresco y vivaz, con toques de frutos rojos.</p>
+                    <button class="btn btn-wine" onclick="alert('Se realizo la compra con exito!')">Comprar</button>
+                </div>
+            </div>
+            <div class="card product-card shadow-sm">
+                <img src="/img/Vina_Alta_Producto12.webp" class="card-img-top" alt="Vinos Tintos">
+                <div class="card-body">
+                    <h5 class="card-title">Vino Tinto Edición Limitada</h5>
+                    <p class="card-text">Exclusivo blend con crianza especial.</p>
+                    <button class="btn btn-wine" onclick="alert('Se realizo la compra con exito!')">Comprar</button>
+                </div>
+            </div>
+            <div class="card product-card shadow-sm">
+                <img src="/img/vino-blanco-uvas-sobre-mesa-madera_732812-5468.jpg" class="card-img-top" alt="Vinos Blancos">
+                <div class="card-body">
+                    <h5 class="card-title">Vino Blanco Reserva</h5>
+                    <p class="card-text">Elegante y complejo, con notas de miel.</p>
+                    <button class="btn btn-wine" onclick="alert('Se realizo la compra con exito!')">Comprar</button>
+                </div>
+            </div>
+            <div class="card product-card shadow-sm">
+                <img src="/img/Portada_La_Vie_en_Rose_CDMX_Entre_Copas_y_Corchos_01.jpg" class="card-img-top" alt="Vinos Rosados">
+                <div class="card-body">
+                    <h5 class="card-title">Vino Rosado Vintage</h5>
+                    <p class="card-text">Sofisticado y equilibrado, cosecha especial.</p>
+                    <button class="btn btn-wine" onclick="alert('Se realizo la compra con exito!')">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light p-5">
+    <div class="container">
+        <div class="row">
+            <!-- Columna Logo y Redes -->
+            <div class="col-md-4">
+                <img src="/img/logo.jpg" alt="Logo Tintinelas" class="img-fluid mb-3" style="max-width: 200px;">
+                <div class="d-flex align-items-center mb-3">
+                    <i class="fas fa-map-marker-alt me-2"></i>
+                    <span>Lima 757, CABA, <br>Buenos Aires, Argentina</span>
+                </div>
+                <div class="social-icons">
+                    <a href="https://facebook.com" class="me-2"><img src="/img/facebook.png" alt="Facebook" style="width: 32px;"></a>
+                    <a href="https://instagram.com" class="me-2"><img src="/img/instagram.svg.png" alt="Instagram" style="width: 32px;"></a>
+                    <a href="https://x.com" class="me-2"><img src="/img/x.webp" alt="Twitter" style="width: 32px;"></a>
+                </div>
+            </div>
+
+            <div class="col-md-8">
+                <div class="row">
+                    <!-- Columna LinkedIn 1 -->
+                    <div class="col-md-4">
+                        <h5 class="mb-3">Equipo 13</h5>
+                        <ul class="list-unstyled linkedin-links">
+                            <li class="mb-2">
+                                <a href="https://www.linkedin.com/in/stefania-berger-95ab092ba/" class="text-light text-decoration-none d-flex align-items-center" target="_blank">
+                                    <i class="fab fa-linkedin me-2"></i>
+                                    Berger Stefania
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="https://www.linkedin.com/in/alexisconcepcion/" class="text-light text-decoration-none d-flex align-items-center" target="_blank">
+                                    <i class="fab fa-linkedin me-2"></i>
+                                    Concepcion Alexis
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="https://www.linkedin.com/in/valentina-cuello-3ab078160/" class="text-light text-decoration-none d-flex align-items-center" target="_blank">
+                                    <i class="fab fa-linkedin me-2"></i>
+                                    Cuello Valentina
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="https://www.linkedin.com/in/leandro-melo-3028b0139/" class="text-light text-decoration-none d-flex align-items-center" target="_blank">
+                                    <i class="fab fa-linkedin me-2"></i>
+                                    Melo Leandro
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="https://www.linkedin.com/in/sofia-villar-b490b5207/" class="text-light text-decoration-none d-flex align-items-center" target="_blank">
+                                    <i class="fab fa-linkedin me-2"></i>
+                                    Villar Sofia
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    
+
+                    <!-- Columna Contacto -->
+                    <div class="col-md-4">
+                        <h5 class="mb-3">Dirección</h5>
+                        <ul class="list-unstyled contact-info">
+                            <li class="mb-3">
+                                <i class="fas fa-map-marker-alt me-2"></i>
+                                Lima 757, CABA
+                            </li>
+                            <li class="mb-3">
+                                <i class="fas fa-phone me-2"></i>
+                                +54 9 11-7662-5199
+                            </li>
+                            <li class="mb-3">
+                                <i class="fas fa-envelope me-2"></i>
+                                contactoUADE@tintinelas.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-12 text-center">
+                <p class="mb-0">&copy; 2024 Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="/js/Powerful-Customizable-jQuery-Carousel-Slider-OWL-Carousel/owl-carousel/owl.carousel.min.js"></script>
+<script>$(document).ready(function() {
+ 
+    $(".owl-carousel").owlCarousel({
+    
+    //Basic Speeds
+    slideSpeed : 200,
+    paginationSpeed : 800,
+   
+    //Autoplay
+    autoPlay : true,
+    goToFirst : true,
+    goToFirstSpeed : 1000,
+   
+    // Navigation
+    navigation : false,
+    navigationText : ["prev","next"],
+    pagination : true,
+    paginationNumbers: true,
+   
+    // Responsive
+    responsive: true,
+    items : 5,
+    itemsDesktop : [1199,4],
+    itemsDesktopSmall : [980,3],
+    itemsTablet: [768,2],
+    itemsMobile : [479,1]
+   
+   })
+       });</script>
