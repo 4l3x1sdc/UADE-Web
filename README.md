@@ -2,7 +2,7 @@ Informacion sobre Markdown [aca](https://www.markdownguide.org/cheat-sheet/)
 
 # Este repositorio contiene los trabajos practicos realizados en html para la materia Diseño y Desarrollo WEB de UADE.
 
-# Trabajos parcticos html para UADE
+# Trabajos parcticos html para UADE.
 
 En este repositorio estan los trabajos iniciales de practicas con html realizados durante la cursada en UADE. No es la unica manera de realizar los trabajos, es la que utilize yo al momento de realizar los mismos.
 
